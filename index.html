@@ -148,7 +148,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v13M6 11l6 6 6-6M4 21h16"/></svg>
         Télécharger pour Windows
       </a>
-      <p class="fiche"><span class="tel">Fichier de 145 Mo.</span><span class="pc">Fichier de 25 Mo.</span> <span id="version">Version 2026.11.23 du 23 novembre 2026</span>. Gratuit.</p>
+      <p class="fiche"><span class="tel">Fichier de <span id="taille-apk">145</span> Mo.</span><span class="pc">Fichier de <span id="taille-exe">17</span> Mo.</span> <span id="version">Version 2026.11.23 du 23 novembre 2026</span>. Gratuit.</p>
     </div>
     <div>
       <img class="capture pc" src="capture-ordinateur.jpg" width="1600" height="950" alt="L'écran d'accueil d'OrdoProche sur ordinateur">
@@ -273,6 +273,10 @@
       const date = d.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
       const num = (rel.tag_name || "").replace(/^v/, "").replace(/-\d+$/, "");
       document.getElementById("version").textContent = "Version " + num + " du " + date;
+      for (const f of rel.assets || []) {
+        const el = document.getElementById(f.name.endsWith(".apk") ? "taille-apk" : f.name.endsWith(".exe") ? "taille-exe" : "");
+        if (el) el.textContent = Math.round(f.size / 1e6);
+      }
     })
     .catch(() => {});
 </script>
