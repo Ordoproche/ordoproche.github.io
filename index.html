@@ -57,6 +57,11 @@
   .fiche { margin-top: 12px; font-size: 14.5px; color: var(--gris); }
   .capture { border: 1px solid var(--encre); border-radius: 6px; overflow: hidden; background: #fff; }
 
+  /* Visuel du téléphone posé sur celui de l'ordinateur */
+  .visuels { position: relative; padding: 0 0 54px 0; }
+  .visuels .capture.pc { width: 88%; }
+  .visuels .mobile { position: absolute; right: 0; bottom: 0; width: 25%; border: 1px solid var(--encre); border-radius: 14px; overflow: hidden; background: #fff; box-shadow: -10px 12px 0 var(--papier); }
+
   /* Rubriques */
   .rubrique { border-top: 1px solid var(--encre); padding: 22px 0 60px; }
   .surtitre { font: 700 13px/1 var(--sans); letter-spacing: 1.6px; text-transform: uppercase; color: var(--vert); }
@@ -115,6 +120,7 @@
     .chapeau { font-size: 17.5px; }
     .bouton { display: flex; justify-content: center; font-size: 17.5px; padding: 15px 12px; }
     .capture { width: 58%; margin: 0 auto; border-radius: 14px; }
+    .visuels { padding: 0; }
     .rubrique { padding: 18px 0 44px; }
     h2 { font-size: 27px; }
     .etapes { grid-template-columns: 1fr; gap: 30px; margin-top: 24px; }
@@ -151,8 +157,9 @@
       </a>
       <p class="fiche"><span class="tel">Fichier de <span id="taille-apk">145</span> Mo.</span><span class="pc">Fichier de <span id="taille-exe">17</span> Mo.</span> <span id="version">Version 2026.11.23 du 23 novembre 2026</span>. Gratuit.</p>
     </div>
-    <div>
+    <div class="visuels">
       <img class="capture pc" src="capture-ordinateur.jpg" width="1600" height="950" alt="L'écran d'accueil d'OrdoProche sur ordinateur">
+      <img class="mobile pc" src="capture-telephone.jpg" width="768" height="1664" alt="L'écran d'accueil d'OrdoProche sur téléphone">
       <img class="capture tel" src="capture-telephone.jpg" width="768" height="1664" alt="L'écran d'accueil d'OrdoProche sur téléphone">
     </div>
   </section>
