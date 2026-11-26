@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OrdoProche, politique de confidentialité</title>
+<meta name="description" content="Ce que l'application OrdoProche fait, et ne fait pas, de vos données.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<style>
+  @font-face { font-family: "Source Serif 4"; font-weight: 600; font-style: normal; font-display: swap; src: url(fonts/source-serif-4-latin-600-normal.woff2) format("woff2"); }
+  @font-face { font-family: "Source Sans 3"; font-weight: 400; font-display: swap; src: url(fonts/source-sans-3-latin-400-normal.woff2) format("woff2"); }
+  @font-face { font-family: "Source Sans 3"; font-weight: 700; font-display: swap; src: url(fonts/source-sans-3-latin-700-normal.woff2) format("woff2"); }
+  :root {
+    --papier: #FBFAF6;
+    --encre: #16233F;
+    --texte: #2A3140;
+    --gris: #636B7A;
+    --filet: #D8D3C6;
+    --vert: #0B7A55;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: "Source Sans 3", "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--papier); color: var(--texte); font: 17px/1.55 var(--sans); }
+  .page { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+  p { margin: 0; }
+  a { color: var(--encre); text-decoration-color: var(--vert); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+  .entete { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0 16px; border-bottom: 2px solid var(--encre); }
+  .marque { display: flex; align-items: center; gap: 10px; font: 600 24px/1 var(--serif); color: var(--encre); text-decoration: none; }
+  .marque img { width: 34px; height: 34px; display: block; }
+  .marque i { color: var(--vert); }
+  .entete p { font-size: 14.5px; color: var(--gris); text-align: right; }
+
+  h1 { margin: 48px 0 0; font: 600 40px/1.12 var(--serif); color: var(--encre); letter-spacing: -.4px; text-wrap: balance; }
+  .date { margin-top: 10px; font-size: 14.5px; color: var(--gris); }
+  .resume { margin: 28px 0 8px; padding: 18px 0; border-top: 1px solid var(--encre); border-bottom: 1px solid var(--encre); font-size: 19px; line-height: 1.45; color: var(--encre); }
+  .resume b { font-weight: 700; }
+
+  section { padding: 30px 0 4px; }
+  .surtitre { font: 700 13px/1 var(--sans); letter-spacing: 1.6px; text-transform: uppercase; color: var(--vert); }
+  h2 { margin: 10px 0 12px; font: 600 26px/1.18 var(--serif); color: var(--encre); letter-spacing: -.2px; text-wrap: balance; }
+  section p + p, ul + p { margin-top: 12px; }
+  ul { margin: 12px 0 0; padding: 0; list-style: none; }
+  li { padding: 10px 0; border-bottom: 1px solid var(--filet); }
+  li:first-child { border-top: 1px solid var(--filet); }
+  li b, p b { font-weight: 700; color: var(--encre); }
+
+  footer { margin-top: 44px; border-top: 2px solid var(--encre); padding: 16px 0 40px; font-size: 14.5px; color: var(--gris); display: flex; justify-content: space-between; gap: 24px; }
+
+  @media (max-width: 760px) {
+    body { font-size: 16.5px; }
+    .page { padding: 0 20px; }
+    .entete { padding: 16px 0 12px; }
+    .entete p { display: none; }
+    .marque { font-size: 21px; }
+    .marque img { width: 30px; height: 30px; }
+    h1 { margin-top: 30px; font-size: 31px; }
+    .resume { font-size: 17.5px; }
+    h2 { font-size: 23px; }
+    footer { flex-direction: column; gap: 4px; padding-bottom: 28px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="entete">
+    <a class="marque" href="./"><img src="logo.svg" alt=""><span>OrdoP<i>r</i>oche</span></a>
+    <p>Application d'ordonnances pour médecins</p>
+  </header>
+
+  <h1>Politique de confidentialité</h1>
+  <p class="date">Version du 26 novembre 2026. Elle vaut pour l'application OrdoProche sur Android et sur Windows, et pour ce site.</p>
+
+  <p class="resume"><b>OrdoProche n'envoie vos données à personne.</b> Il n'y a ni compte à créer, ni serveur, ni publicité, ni mesure d'audience. Ce que vous saisissez reste dans votre appareil, dans une base chiffrée.</p>
+
+  <section>
+    <p class="surtitre">Qui répond de quoi</p>
+    <h2>L'éditeur et vous</h2>
+    <p>L'application est éditée par <b>Jean Houël</b>, médecin généraliste, en entreprise individuelle. Pour toute question : <a href="mailto:contact@ordoproche.fr">contact@ordoproche.fr</a>.</p>
+    <p>L'éditeur n'a aucun accès à ce que vous enregistrez dans l'application. Pour les données de vos patients, <b>vous êtes le responsable du traitement</b>, comme pour votre dossier médical habituel.</p>
+  </section>
+
+  <section>
+    <p class="surtitre">Dans votre appareil</p>
+    <h2>Ce que l'application enregistre</h2>
+    <ul>
+      <li><b>Votre profil</b> : nom, numéro RPPS, coordonnées du cabinet, signature.</li>
+      <li><b>Vos patients</b> : nom, prénom, sexe, date de naissance, poids, et si vous les saisissez téléphone, adresse et note pratique.</li>
+      <li><b>Vos documents</b> : ordonnances, courriers, certificats et autres documents que vous rédigez ou importez.</li>
+    </ul>
+    <p>Tout cela est rangé dans une base chiffrée, dont la clé est gardée par le système de l'appareil. L'application se verrouille par un code à six chiffres, avec l'empreinte en option. Elle est exclue de la sauvegarde automatique d'Android.</p>
+  </section>
+
+  <section>
+    <p class="surtitre">Le réseau</p>
+    <h2>Quand l'application se connecte</h2>
+    <p>L'application fonctionne sans connexion. Elle n'utilise le réseau que dans deux cas, toujours à votre demande.</p>
+    <ul>
+      <li><b>Mettre à jour la liste des médicaments.</b> Elle télécharge les fichiers publics de la base de données publique des médicaments (medicaments.gouv.fr). Rien n'est envoyé, hormis la demande de téléchargement elle-même.</li>
+      <li><b>Envoyer en direct et synchroniser.</b> Le document passe par un Wi-Fi local, d'un appareil à l'autre, sans transiter par Internet.</li>
+    </ul>
+    <p>Certains boutons ouvrent un site public dans votre navigateur, par exemple l'Annuaire Santé. Vous quittez alors l'application.</p>
+  </section>
+
+  <section>
+    <p class="surtitre">Les autres applications</p>
+    <h2>Ce qui passe par votre téléphone</h2>
+    <ul>
+      <li><b>Partager ou imprimer.</b> Le document est remis à l'application que vous choisissez (messagerie, imprimante). C'est elle qui l'achemine, selon ses propres règles.</li>
+      <li><b>Dicter.</b> La dictée est celle de votre téléphone (Google ou Samsung). Si le français hors ligne n'y est pas installé, votre voix peut être envoyée à ce fournisseur. Ne dictez pas le nom d'un patient.</li>
+      <li><b>Lire une photo, un PDF ou un QR code.</b> La lecture se fait dans l'appareil, avec un composant de Google (ML Kit). L'image n'est pas envoyée. Ce composant peut transmettre à Google des mesures techniques sur son fonctionnement, sans le contenu lu.</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="surtitre">Le code d'activation</p>
+    <h2>Les seules données que reçoit l'éditeur</h2>
+    <p>Pour obtenir votre code, vous écrivez à l'éditeur par messagerie sécurisée en indiquant votre nom, votre numéro RPPS et votre adresse de messagerie. Ces informations servent à vérifier que vous êtes médecin et à établir un code à votre nom.</p>
+    <p>Elles sont conservées dans un registre tenu hors ligne, pendant la validité du code puis un an, avant d'être effacées. Le texte de votre demande est gardé trois mois. Elles ne sont ni cédées, ni utilisées à d'autres fins. Ce traitement repose sur l'intérêt légitime de réserver l'application aux médecins.</p>
+    <p>Vous pouvez demander à consulter, corriger ou effacer ces informations à <a href="mailto:contact@ordoproche.fr">contact@ordoproche.fr</a>. Vous pouvez aussi saisir la CNIL (cnil.fr).</p>
+  </section>
+
+  <section>
+    <p class="surtitre">Garder ou effacer</p>
+    <h2>Vous gardez la main</h2>
+    <ul>
+      <li><b>Sauvegarder.</b> La sauvegarde est un fichier chiffré par une phrase secrète que vous choisissez. Vous décidez où le ranger.</li>
+      <li><b>Tout effacer.</b> Dans Profil, « Sécurité et sauvegarde », l'effacement complet vide l'application. La désinstaller supprime aussi ses données.</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="surtitre">Ce site</p>
+    <h2>Pas de traceur</h2>
+    <p>Ce site ne dépose aucun cookie et ne mesure pas son audience. Il est hébergé par GitHub, qui reçoit comme tout hébergeur l'adresse IP des visiteurs. La page d'accueil interroge GitHub pour afficher le numéro de la dernière version.</p>
+  </section>
+
+  <section>
+    <p class="surtitre">Mises à jour</p>
+    <h2>Si cette politique change</h2>
+    <p>Toute modification sera publiée sur cette page, avec sa date.</p>
+  </section>
+
+  <footer>
+    <span><a href="./">Retour à l'accueil</a></span>
+    <span>OrdoProche n'est pas un dispositif médical.</span>
+  </footer>
+</div>
+</body>
+</html>
